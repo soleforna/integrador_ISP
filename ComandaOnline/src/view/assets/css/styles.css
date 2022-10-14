@@ -1,0 +1,12 @@
+.body{
+  height: 176px;
+  background: #FFF9C3;
+  font-family: sans-serif;
+}
+
+@media (min-width:1200px) {
+  .fs-4 {
+    font-size: 24px!important;
+  }
+}
+
