@@ -6,6 +6,9 @@
   font-family: sans-serif;
 }
 
+.logoComanda{
+  width: 8em!important;
+}
 
 @media (min-width:1200px) {
   .fs-4 {
