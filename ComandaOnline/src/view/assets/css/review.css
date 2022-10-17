@@ -7,7 +7,9 @@ body{
      
      padding: 0.4em;
 }
-
+.logo{
+     width: 70%;
+}
 .redes-sociales{
      display: flex;
      justify-content: space-around;
@@ -43,3 +45,17 @@ body{
      
 }
 
+.no-selected{
+     color: #212121;
+}
+
+
+.no-selected:hover{
+     color: #FFA000;
+}
+
+
+
+.selected{
+     color: #FFA000;
+}
