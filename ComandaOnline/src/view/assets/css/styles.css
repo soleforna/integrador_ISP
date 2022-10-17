@@ -1,21 +1,21 @@
 
-.body{
+.bc-fondo{
   height: 176px;                           
-  background: #FFF9C3;
+  background-color:#FFF9C4;
   font-family: sans-serif;
 }
 
-.logoComanda{
-  width: 8em!important;
+.bg-carrousel{
+  margin-top :150px;
 }
 
-<<<<<<< HEAD
-.logo-footer{
-  width: 8rem;
+img.logoComanda{
+  width: 5em;
+}
+img.logo-footer{
+  width: 5em;
 }
 
-
-=======
 .mesa_libre {
   display: flex;
   justify-content: center;
@@ -41,7 +41,6 @@
   background: #cf1212;
   color: black;
 }
->>>>>>> 1c21b233ec3d47096fe3178c23d2b78e6343cbe1
 
 @media (min-width:1200px) {
   .fs-4 {
