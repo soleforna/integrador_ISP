@@ -10868,7 +10868,7 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url("../img/bg-seccion.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -11289,4 +11289,8 @@ body.sidebar-toggled footer.sticky-footer {
 
 .logoComanda{
   width: 4em;
+}
+
+.fondo_login{
+  background-color:  var(--accentColor);
 }
