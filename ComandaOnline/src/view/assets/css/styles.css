@@ -49,3 +49,13 @@ img.logo-footer{
 }
 
 
+.container-imag{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.content-imag{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
