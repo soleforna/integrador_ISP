@@ -9,9 +9,28 @@
   width: 8em!important;
 }
 
+.mesa_libre {
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #0be441;
+}
+
+.mesa_ocupada {
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #cf1212;
+}
+
 @media (min-width:1200px) {
   .fs-4 {
     font-size: 24px!important;
   }
 }
+
 
