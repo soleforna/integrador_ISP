@@ -1,7 +1,6 @@
 
 .body{
- 
-    height: 176px;                           
+  height: 176px;                           
   background: #FFF9C3;
   font-family: sans-serif;
 }
@@ -10,15 +9,44 @@
   width: 8em!important;
 }
 
+<<<<<<< HEAD
 .logo-footer{
   width: 8rem;
 }
 
 
+=======
+.mesa_libre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #0be441;
+  color: black
+}
+
+.mesa_ocupada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #cf1212;
+  color: black;
+}
+>>>>>>> 1c21b233ec3d47096fe3178c23d2b78e6343cbe1
 
 @media (min-width:1200px) {
   .fs-4 {
     font-size: 24px!important;
   }
 }
+
 
