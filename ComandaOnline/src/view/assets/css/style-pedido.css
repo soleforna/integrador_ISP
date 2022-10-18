@@ -38,6 +38,8 @@
 .container-pedidos .container-nav {
   width: 100%;
   display: flex;
+  position: fixed;
+  bottom: 0;
 }
 .container-pedidos .container-nav nav {
   width: 100%;
