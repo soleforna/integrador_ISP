@@ -1,12 +1,19 @@
 
-.body{
+.bc-fondo{
   height: 176px;                           
-  background: #FFF9C3;
+  background-color:#FFF9C4;
   font-family: sans-serif;
 }
 
-.logoComanda{
-  width: 8em!important;
+.bg-carrousel{
+  margin-top :150px;
+}
+
+img.logoComanda{
+  width: 3rem;
+}
+img.logo-footer{
+  width: 5rem;
 }
 
 .mesa_libre {
@@ -41,4 +48,16 @@
   }
 }
 
+
+.container-imag{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.content-imag{
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-family: system-ui;
+}
 
