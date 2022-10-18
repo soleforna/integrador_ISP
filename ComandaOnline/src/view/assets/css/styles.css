@@ -10,10 +10,10 @@
 }
 
 img.logoComanda{
-  width: 5em;
+  width: 3rem;
 }
 img.logo-footer{
-  width: 5em;
+  width: 5rem;
 }
 
 .mesa_libre {
@@ -60,3 +60,4 @@ img.logo-footer{
   left: 30px;
   font-family: system-ui;
 }
+
