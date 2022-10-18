@@ -28,8 +28,3 @@ document.getElementById("dislike").onclick = function(){
   dislike();
 }
 
-//Reestablecer el modal al reabrir
-const myModalEl = document.getElementById('myModal')
-myModalEl.addEventListener('hidden.bs.modal', event => {
-  
-})

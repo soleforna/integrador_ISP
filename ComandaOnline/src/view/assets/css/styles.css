@@ -1,0 +1,44 @@
+
+.body{
+  height: 176px;                           
+  background: #FFF9C3;
+  font-family: sans-serif;
+}
+
+.logoComanda{
+  width: 8em!important;
+}
+
+.mesa_libre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #0be441;
+  color: black
+}
+
+.mesa_ocupada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #cf1212;
+  color: black;
+}
+
+@media (min-width:1200px) {
+  .fs-4 {
+    font-size: 24px!important;
+  }
+}
+
+
