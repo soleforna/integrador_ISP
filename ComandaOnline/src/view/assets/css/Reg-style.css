@@ -1,0 +1,11 @@
+body{
+    font-family: 'roboto';
+    background-color: rgb(249, 249, 235);
+}
+.primaryBg{
+    background-color: rgb(255, 196, 0);
+}
+.registration-form{
+    display: none;
+
+}
