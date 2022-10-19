@@ -5,15 +5,8 @@
   font-family: sans-serif;
 }
 
-.bg-carrousel{
-  margin-top :150px;
-}
-
-img.logoComanda{
-  width: 3rem;
-}
-img.logo-footer{
-  width: 5rem;
+.logoComanda{
+  width: 35%;
 }
 
 .mesa_libre {
@@ -42,11 +35,6 @@ img.logo-footer{
   color: black;
 }
 
-@media (min-width:1200px) {
-  .fs-4 {
-    font-size: 24px!important;
-  }
-}
 
 
 .container-imag{
@@ -54,6 +42,7 @@ img.logo-footer{
   display: inline-block;
   text-align: center;
 }
+
 .content-imag{
   position: absolute;
   top: 50px;
@@ -61,3 +50,26 @@ img.logo-footer{
   font-family: system-ui;
 }
 
+.fit-cover {
+  object-fit: cover;
+}
+
+.nav_comanda{
+  font-size: 1.5rem;
+    color: #000!important;
+    background: var(--darkPrimaryColor);
+    margin: 0px;
+}
+
+.nav_comanda:hover{
+    color: rgb(107, 106, 106)!important;
+    font-weight: bold;
+    background: var(--ligthPrimaryColor);
+    margin: 0px;
+}
+
+@media (min-width:1200px) {
+  .fs-4 {
+    font-size: 24px!important;
+  }
+}
