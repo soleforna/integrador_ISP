@@ -6,7 +6,7 @@
 }
 
 .logoComanda{
-  width: 100%;
+  width: 35%;
 }
 
 .mesa_libre {
@@ -35,11 +35,7 @@
   color: black;
 }
 
-@media (min-width:1200px) {
-  .fs-4 {
-    font-size: 24px!important;
-  }
-}
+
 
 .container-imag{
   position: relative;
@@ -56,4 +52,24 @@
 
 .fit-cover {
   object-fit: cover;
+}
+
+.nav_comanda{
+  font-size: 1.5rem;
+    color: #000!important;
+    background: var(--darkPrimaryColor);
+    margin: 0px;
+}
+
+.nav_comanda:hover{
+    color: rgb(107, 106, 106)!important;
+    font-weight: bold;
+    background: var(--ligthPrimaryColor);
+    margin: 0px;
+}
+
+@media (min-width:1200px) {
+  .fs-4 {
+    font-size: 24px!important;
+  }
 }
