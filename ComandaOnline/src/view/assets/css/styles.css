@@ -61,3 +61,27 @@ img.logo-footer{
   font-family: system-ui;
 }
 
+
+a.nav-link,
+a.nav-link.active {
+  color: black!important;
+  font-weight: bold;
+  background: var(--darkPrimaryColor);
+  margin: 0px;
+  padding: 8px;
+}
+
+.card-title,
+.card-text {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2em;
+
+}
+
+.container{
+  font-size: 25px !important;
+  font-weight: bold;
+}

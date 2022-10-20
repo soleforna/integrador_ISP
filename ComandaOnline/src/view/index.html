@@ -31,61 +31,42 @@
             <a class="navbar-brand" href="#">
                 <img class="logoComanda" src="assets/img/logo.webp">
             </a><!-- End: logo -->
-           <!--  <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
                 <span class="visually-hidden">Toggle navigation</span>
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button> 
 
             <!-- Start: nav-content -->
             <div class="collapse navbar-collapse justify-content-center" id="navcol-1">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#functionalities"
-                            style="color: var(--bs-black);font-weight: bold;background: var(--darkPrimaryColor);margin: 0px;padding: 8px;">Funcionalidades</a>
+                    <li class="nav-item"><a class="nav-link" href="#functionalities">Funcionalidades</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#plans"
-                            style="color: var(--bs-black);font-weight: bold;background: var(--darkPrimaryColor);">Planes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stories"
-                            style="color: var(--bs-black);font-weight: bold;background: var(--darkPrimaryColor);">Historias de Exito</a>
+                    <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stories">Historias de Exito</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="#About us"
-                            style="color: var(--bs-black);font-weight: bold;background: var(--darkPrimaryColor);">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"
-                            style="font-weight: bold;color: var(--bs-black);background: var(--darkPrimaryColor);">Iniciar Sesion</a>
+                    <li class="nav-item"><a class="nav-link active" href="#About us">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesion</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="register.html"
-                            style="color: var(--bs-black);font-weight: bold;background: var(--darkPrimaryColor);">Registrate</a>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Registrate</a>
                     </li>
                 </ul>
             </div><!-- End: nav-content -->
         </div>
     </nav><!-- End: navbar -->
     <!-- Start: sec-proba -->
-    <section></section><!-- End: sec-proba -->
-    <div>
-        <h1 class="fw-bold d-xxl-flex justify-content-xxl-start"
-            style="height: 176px;background: var(--bs-yellow);text-align: center;">La solución para tu bar o restaurante
-            llegó de la mano de Comanda OnLine<button
-                class="btn btn-primary d-flex d-xxl-flex justify-content-end align-items-baseline justify-content-xxl-center align-items-xxl-center pe-4 pb-2 boton-nav"
-                type="button"
-                style="width: 172px;height: 42px;color: var(--bs-btn-disabled-color);background: var(--bs-gray);font-weight: bold;border-style: solid;border-radius: 11px;transform: translate(-28px) translateX(-368px) translateY(-4px) translateZ(94px);position: static;display: flex;margin-left: 492px;text-align: center;font-size: 14px;">PROBALO
-                GRATIS</button></h1>
-    </div><!-- Start: sec-baner -->
-    <section>
-        <!-- Start: div-imag -->
-        <div><img class="img-thumbnail img-fluid" src="../view/assets/img/bg-seccion.jpg" loading="auto" height="469px">
-        </div><!-- End: div-imag -->
-        <!-- Start: sec-content -->
-        <div class="text-center d-flex flex-column justify-content-center align-items-center">
-            <h1 class="display-1 fw-bold d-flex justify-content-center align-items-center"
-                style="transform: perspective(330px) translate(-4px) translateX(-4px) translateY(-222px) translateZ(-52px);font-size: 26.2px;">
-                Una solución a la medida de tus necesidades. Quienes los probaron lo recomiendan.</h1>
-        </div><!-- End: sec-content -->
-    </section><!-- End: sec-baner -->
+    <!-- Start: sec-baner -->
+    <div class="card bg-dark text-white">
+        <img src="./assets/img/bg-seccion.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Comanda Online</h5>
+          <p class="card-text">Una solución a la medida de tus necesidades. Quienes los probaron lo recomiendan..</p>
+        </div>
+      </div><!-- End: sec-baner -->
     <!-- Start: Articles Badges -->
     <div class="container py-4 py-xl-5">
         <div class="row mb-5" id="functionalities" style="height: 111.4px;">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2 style="font-size: 33px;text-decoration: underline;font-weight: bold;">Funcionalidades</h2>
+                <h2 >Funcionalidades</h2>
                 <p class="w-lg-50"></p>
             </div>
         </div>
@@ -121,7 +102,7 @@
         </div>
     </div><!-- End: Articles Badges -->
     <section class="bg-carousel">
-        <div class="container py-4 py-xl-5" id="plans" style="margin-top: 50px;">
+        <div class="container py-4 py-xl-5" id="stories" style="margin-top: 50px;">
         <div class="row mb-5" >
             <div class="col-md-8 col-xl-6 text-center mx-auto">
                 <h2 >Historias de Exito</h2>
@@ -141,7 +122,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" id="stories">
+                <div class="carousel-item active" >
                     <img src="./assets/img/bc-carrusel3.webp" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Amelie -Cafetería</h5>
@@ -176,14 +157,17 @@
         </div>
     </section><!-- End: Bold BS4 CSS Image Slider -->
     <!-- Start: Pricing Centered -->
-
-    <div class="container py-4 py-xl-5" id="plans" style="margin-top: 50px;">
-        <div class="row mb-5" >
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2 >Planes</h2>
-                <p class="w-lg-50">Todo lo que necesita tu negocio, a un precio que podés pagar.</p>
-            </div>
+    <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title" id="Plans">Planes</h5>
+          <p class="card-text">Todo lo que necesita tu negocio, a un precio que podés pagar.</p>
+          <a href="/ComandaOnline/src/view/register.html" class="btn btn-primary">Probalo gratis</a>
         </div>
+        <div class="card-footer text-muted">
+          Hace 2 días
+        </div>
+    </div>
+            <!-- End: Pricing tittle -->   
         <div class="row gy-4 gy-xl-0 row-cols-1 row-cols-md-2 row-cols-xl-3 d-xl-flex align-items-xl-center gutter-y">
             <div class="col">
                 <div class="card">
