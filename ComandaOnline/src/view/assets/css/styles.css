@@ -54,6 +54,13 @@ img.logo-footer{
     font-size: 1.5em;
   }
 }
+@media screen and (max-width: 768px) {
+  .carousel-item > p h5 {
+    display: block;
+    font-size: 1.5em;
+  }
+}
+  
 
 .container-imag{
   position: relative;
