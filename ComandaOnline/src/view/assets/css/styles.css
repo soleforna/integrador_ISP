@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 
-.logoComanda{
+.logo-Comanda{
   width: 35%;
 }
 
@@ -67,9 +67,34 @@
     background: var(--ligthPrimaryColor);
     margin: 0px;
 }
+.card-title,
+.card-text {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5em;
+
+}
+
+
+
+
 
 @media (min-width:1200px) {
   .fs-4 {
     font-size: 24px!important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-item > p h5 {
+    display: block;
+    font-size: 1.5em;
   }
 }
