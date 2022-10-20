@@ -5,15 +5,8 @@
   font-family: sans-serif;
 }
 
-.bg-carrousel{
-  margin-top :150px;
-}
-
-img.logoComanda{
-  width: 3rem;
-}
-img.logo-footer{
-  width: 5rem;
+.logoComanda{
+  width: 35%;
 }
 
 .mesa_libre {
@@ -42,31 +35,14 @@ img.logo-footer{
   color: black;
 }
 
-@media (min-width:1200px) {
-  .fs-4 {
-    font-size: 24px!important;
-  }
- 
-}
 
-@media screen and (max-width: 768px) {
-  .container {
-    font-size: 1.5em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .carousel-item > p h5 {
-    display: block;
-    font-size: 1.5em;
-  }
-}
-  
 
 .container-imag{
   position: relative;
   display: inline-block;
   text-align: center;
 }
+
 .content-imag{
   position: absolute;
   top: 50px;
@@ -74,27 +50,26 @@ img.logo-footer{
   font-family: system-ui;
 }
 
-
-a.nav-link,
-a.nav-link.active {
-  color: black!important;
-  font-weight: bold;
-  background: var(--darkPrimaryColor);
-  margin: 0px;
-  padding: 8px;
+.fit-cover {
+  object-fit: cover;
 }
 
-.card-title,
-.card-text {
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 2em;
-
+.nav_comanda{
+  font-size: 1.5rem;
+    color: #000!important;
+    background: var(--darkPrimaryColor);
+    margin: 0px;
 }
 
-.container{
-  font-size: 25px !important;
-  font-weight: bold;
+.nav_comanda:hover{
+    color: rgb(107, 106, 106)!important;
+    font-weight: bold;
+    background: var(--ligthPrimaryColor);
+    margin: 0px;
+}
+
+@media (min-width:1200px) {
+  .fs-4 {
+    font-size: 24px!important;
+  }
 }

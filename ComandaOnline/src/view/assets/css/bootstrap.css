@@ -10868,7 +10868,7 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("../img/bg-seccion.jpg");
+  background: url("../img/bg-seccion.webp");
   background-position: center;
   background-size: cover;
 }
