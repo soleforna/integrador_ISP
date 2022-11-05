@@ -74,14 +74,15 @@ WSGI_APPLICATION = 'comanda.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+# Los datos de la BD quedan registradas en chat de discord con fecha 4/11
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'b18xdxf1d63ofzutwoyi',
-        'USER': 'uozn8qfovny6xzgv',
-        'PASSWORD': 'Hw54vJGa9jXYa8wI5faD',
-        'HOST': 'b18xdxf1d63ofzutwoyi-mysql.services.clever-cloud.com',
+        'NAME': 'any_dbname',
+        'USER': 'any_user',
+        'PASSWORD': 'any_pwd',
+        'HOST': 'any_host',
         'PORT': '3306',
 
 
@@ -111,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ar'
 
 TIME_ZONE = 'UTC'
 
