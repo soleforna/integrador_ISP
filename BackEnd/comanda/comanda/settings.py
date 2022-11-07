@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'review',
+    'pyAPI',
 ]
 
 MIDDLEWARE = [
@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'comanda.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comanda_db',
+        'NAME': 'comanda',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': 'localhost',
