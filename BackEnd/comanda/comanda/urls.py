@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from review.api.router import router_review
+from pyAPI.api.router import router_review, router_business, router_table, router_order
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/review', include(router_review.urls)),
+    path('api/business', include(router_business.urls)),
+    path('api/tables', include(router_table.urls)),
+    path('api/orders', include(router_order.urls)),
+    path('api/reviews', include(router_review.urls)),
 ]
