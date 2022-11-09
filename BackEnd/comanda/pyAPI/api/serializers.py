@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from pyAPI.models import Business, Table, Order, Review
+from pyAPI.models import Business, Table, Order, Review, Product, Supplier, Promo
 
 
 class BusinessSerializer(ModelSerializer):
@@ -23,4 +23,20 @@ class OrderSerializer(ModelSerializer):
 class ReviewSerializer(ModelSerializer):
     class Meta:
         model = Review
+        fields = "__all__"
+
+
+class ProductSerializer(ModelSerializer):
+    class Meta:
+        model = Product
+        fields = "__all__"
+        
+class SupplierSerializer(ModelSerializer):
+    class Meta:
+        model = Supplier
+        fields = "__all__"
+        
+class PromoSerializer(ModelSerializer):
+    class Meta:
+        model = Promo
         fields = "__all__"

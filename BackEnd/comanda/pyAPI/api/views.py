@@ -1,6 +1,8 @@
 from rest_framework import ModelViewSet
-from pyApi.models import Business, Table, Review
-from .serializers import ReviewSerializer, BusinessSerializer, TableSerializer
+#from BackEnd.comanda.pyAPI.models import Product
+from pyApi.models import Business, Table, Review, Product
+
+from .serializers import ReviewSerializer, BusinessSerializer, TableSerializer, ProductSerializer
 
 
 class BusinessViewSet(ModelViewSet):
@@ -14,3 +16,9 @@ class TableViewSet(ModelViewSet):
 class ReviewViewSet(ModelViewSet):
     serializer_class = ReviewSerializer
     queryset = Review.objects.all()
+
+class ProductViewSet(ModelViewSet):
+    serializer_class = ProductSerializer
+    queryset = Product.objects.all()
+    
+      #TODO supplier y promo
