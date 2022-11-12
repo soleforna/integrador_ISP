@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
-from pyAPI.models import Business, Table, Order, Review
-from .serializers import ReviewSerializer, BusinessSerializer,OrderSerializer, TableSerializer
+from pyAPI.models import Business, Table, Order, Review, Product, Promo, Supplier,Contact,Staff
 
+from .serializers import ReviewSerializer, BusinessSerializer,OrderSerializer, TableSerializer, ProductSerializer, PromoSerializer, SupplierSerializer, ContactSerializer, StaffSerializer 
 class BusinessApiViewSet(ModelViewSet):
     queryset = Business.objects.all()
     serializer_class = BusinessSerializer
@@ -20,3 +20,29 @@ class OrderApiViewSet(ModelViewSet):
 class ReviewApiViewSet(ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+
+
+
+class ProductApiViewSet(ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+
+class PromoApiViewSet(ModelViewSet):
+    queryset = Promo.objects.all()
+    serializer_class = PromoSerializer
+ 
+class SupplierApiViewSet(ModelViewSet):
+    queryset = Supplier.objects.all()
+    serializer_class = SupplierSerializer
+
+
+class ContactApiViewSet(ModelViewSet):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+
+
+
+class StaffApiViewSet(ModelViewSet):
+    queryset = Staff.objects.all()
+    serializer_class = StaffSerializer
