@@ -90,22 +90,22 @@ WSGI_APPLICATION = 'comanda.wsgi.application'
 #DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'b18xdxf1d63ofzutwoyi',
-#        'USER': 'uozn8qfovny6xzgv',
-#        'PASSWORD': 'Hw54vJGa9jXYa8wI5faD',
-#        'HOST': 'b18xdxf1d63ofzutwoyi-mysql.services.clever-cloud.com',
-#        'PORT': '3306',
-#    }
+ #       'NAME': 'b18xdxf1d63ofzutwoyi',
+  #      'USER': 'uozn8qfovny6xzgv',
+   #     'PASSWORD': 'Hw54vJGa9jXYa8wI5faD',
+    #    'HOST': 'b18xdxf1d63ofzutwoyi-mysql.services.clever-cloud.com',
+    #    'PORT': '3306',
+    #}
 #}
 
 #mysql database local
 
 DATABASES = {
-    'default': {
+   'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'comanda',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD':'',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'" }

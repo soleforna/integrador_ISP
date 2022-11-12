@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Business, Table, Order, Review, Product, Supplier, Promo
+from .models import Business, Table, Order, Review, Product, Supplier, Promo,Contact,Staff
 
 
 @admin.register(Business)
@@ -35,3 +35,33 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 #TODO supplier y promo
+
+@admin.register(Supplier)
+class SupplierAdmin(admin.ModelAdmin):
+    #Lista de campos para administrar
+    list_display = ("id", "name", "address", "phone", "cuit", "email","status")
+    #Lista de campos de busqueda
+    search_fields = ["name", "cuit", "email"]
+
+@admin.register(Promo)
+class PromoAdmin(admin.ModelAdmin):
+    #Lista de campos para administrar
+    list_display = ("id", "order_date","name", "description", "sealing_price","status")
+    #Lista de campos de busqueda
+    search_fields = ["order_date","name", "description"]
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    #Lista de campos para administrar
+    list_display = ("id", "date_contact", "email", "phone", "contact_text", "business")
+    #Lista de campos de busqueda
+    search_fields = ["email", "contact_text", "business"]
+
+
+
+@admin.register(Staff)
+class StaffAdmin(admin.ModelAdmin):
+    #Lista de campos para administrar
+    list_display = ("id", "shift", "name","file", "business")
+    #Lista de campos de busqueda
+    search_fields = ["name","file", "business"]

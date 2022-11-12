@@ -34,6 +34,7 @@ class Supplier (models.Model):
     cuit = models.CharField(max_length=40)
     email = models.EmailField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    status = models.BinaryField(max_length=1)
 
     def __str__(self):
         return self.name
@@ -95,3 +96,27 @@ class Promo(models.Model):
     def __str__(self):
         return self.name
     
+#Este es el modelo de Contacto (Joana)
+class Contact(models.Model):
+
+    date_contact = models.DateTimeField(auto_now_add=True)
+    email = models.EmailField()
+    contact_text = models.TextField()
+    phone = models.CharField(max_length=80, null=True, blank=True)
+    business = models.ForeignKey(Business, on_delete=models.CASCADE)
+   
+
+    def __str__(self):
+        return self.email
+
+#Este es el modelo de Personal (Joana)
+class Staff(models.Model):
+
+    shift = models.CharField(max_length=20)
+    name = models.CharField(max_length=80)
+    file = models.CharField(max_length=11)
+    business = models.ForeignKey(Business, on_delete=models.CASCADE)
+   
+
+    def __str__(self):
+        return self.shift
