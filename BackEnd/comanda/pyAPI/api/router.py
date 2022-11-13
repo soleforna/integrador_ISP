@@ -13,14 +13,10 @@ router_staff = DefaultRouter()
 
 router_business.register(prefix='', basename='business', viewset=BusinessApiViewSet)
 router_table.register(prefix='', basename='table', viewset=TableApiViewSet)
-router_order.register(prefix='', viewset=OrderApiViewSet)
+router_order.register(prefix='', basename='order', viewset=OrderApiViewSet)
 router_review.register(prefix='', basename='review', viewset=ReviewApiViewSet)
 router_product.register(prefix='', basename='product', viewset=ProductApiViewSet)
-
-  #TODO supplier y promo
 router_supplier.register(prefix='', basename='supplier', viewset=SupplierApiViewSet)
 router_promo.register(prefix='', basename='promo', viewset=PromoApiViewSet)
-
 router_contact.register(prefix='', basename='contact', viewset=ContactApiViewSet)
-
 router_staff.register(prefix='', basename='staff', viewset=StaffApiViewSet)

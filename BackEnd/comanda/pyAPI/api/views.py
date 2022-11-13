@@ -1,8 +1,6 @@
 from rest_framework import ModelViewSet
-#from BackEnd.comanda.pyAPI.models import Product
-from pyApi.models import Business, Table, Review, Product, Supplier,Promo,Contact,Staff
-
-from .serializers import ReviewSerializer, BusinessSerializer, TableSerializer, ProductSerializer,SupplierSerializer,PromoSerializer,ContactSerializer,StaffSerializer
+from pyApi.models import *
+from .serializers import *
 
 
 class BusinessViewSet(ModelViewSet):
@@ -21,8 +19,6 @@ class ProductViewSet(ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
     
-      #TODO supplier y promo
-
 class SupplierViewSet(ModelViewSet):
     serializer_class = SupplierSerializer
     queryset = Supplier.objects.all()
@@ -34,8 +30,6 @@ class PromoViewSet(ModelViewSet):
 class ContactViewSet(ModelViewSet):
     serializer_class = ContactSerializer
     queryset = Contact.objects.all()
-
-
 
 class StaffViewSet(ModelViewSet):
     serializer_class = StaffSerializer
