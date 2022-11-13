@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-from mimetypes import init
 from pathlib import Path
+#import pymysql
+#pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -88,9 +89,9 @@ WSGI_APPLICATION = 'comanda.wsgi.application'
 #mysql database clever-cloud
 
 #DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'b18xdxf1d63ofzutwoyi',
+#  'default': {
+#       'ENGINE': 'django.db.backends.mysql',
+#       'NAME': 'b18xdxf1d63ofzutwoyi',
 #        'USER': 'uozn8qfovny6xzgv',
 #        'PASSWORD': 'Hw54vJGa9jXYa8wI5faD',
 #        'HOST': 'b18xdxf1d63ofzutwoyi-mysql.services.clever-cloud.com',
@@ -105,10 +106,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'comanda',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '3306',
-        'OPTIONS': {'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'" }
     }
 }
 
