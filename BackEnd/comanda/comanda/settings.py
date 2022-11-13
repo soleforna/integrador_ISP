@@ -13,9 +13,11 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from mimetypes import init
 from pathlib import Path
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+SITE_ID = 1
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -25,9 +27,7 @@ SECRET_KEY = 'django-insecure-%z43nv4w@686_r+p)#1po)_qa&ieu_!)^+&dgk0u13nkmr3!x(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+    'django.contrib.sites',
+    'allauth', 
+    'allauth.account', 
+    # 'allauth.socialaccount' # si queremos implementar autenticación usando redes sociales
     'pyAPI',
 ]
 
@@ -70,8 +76,17 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'comanda.wsgi.application'
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
 
+WSGI_APPLICATION = 'comanda.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
@@ -89,23 +104,23 @@ WSGI_APPLICATION = 'comanda.wsgi.application'
 
 #DATABASES = {
 #    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
- #       'NAME': 'b18xdxf1d63ofzutwoyi',
-  #      'USER': 'uozn8qfovny6xzgv',
-   #     'PASSWORD': 'Hw54vJGa9jXYa8wI5faD',
-    #    'HOST': 'b18xdxf1d63ofzutwoyi-mysql.services.clever-cloud.com',
-    #    'PORT': '3306',
-    #}
+#       'ENGINE': 'django.db.backends.mysql',
+#       'NAME': 'b18xdxf1d63ofzutwoyi',
+#       'USER': 'uozn8qfovny6xzgv',
+#       'PASSWORD': 'Hw54vJGa9jXYa8wI5faD',
+#       'HOST': 'b18xdxf1d63ofzutwoyi-mysql.services.clever-cloud.com',
+#       'PORT': '3306',
+#   }
 #}
 
 #mysql database local
 
 DATABASES = {
-   'default': {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'comanda',
         'USER': 'root',
-        'PASSWORD':'',
+        'PASSWORD':'root',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'" }
@@ -130,18 +145,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 LANGUAGE_CODE = 'es-ar'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
