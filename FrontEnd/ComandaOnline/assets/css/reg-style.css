@@ -8,48 +8,34 @@ body {
 }
 
 main {
-	max-width: 500px;
+	max-width: 800px;
 	width: 90%;
 	margin: auto;
 	padding: 40px;
 	background: #fff;
-	margin-top: 10px;
+	margin-top: 150px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-
-
 }
 main h1{
 	text-align: center;
-}
-.imagen{
-	position: relative;
-	width: 80%;
-	height: 300px;
-	background-image: url('../img/logo.webp');
-	background-position: center center;
-	background-size: cover;
-	margin-left: 30px;
-	
-	
+	color: #9E9E9E;
 }
 
 .formulario {
-	grid-template-columns: 1fr;
-	gap: 20;
-	
-
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 }
-
 
 .formulario__label {
 	display: block;
 	font-weight: 700;
 	padding: 10px;
 	cursor: pointer;
+	color: #9E9E9E;
 }
 
 .formulario__grupo-input {
@@ -59,7 +45,7 @@ main h1{
 .formulario__input {
 	width: 100%;
 	background: none;
-	border: 1px solid  darkgrey ;
+	border: 1px solid  #9E9E9E;
 	border-radius: 30px;
 	height: 45px;
 	line-height: 45px;
@@ -77,7 +63,7 @@ main h1{
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
-	color:#F66060;
+	color: #F66060;
 }
 
 .formulario__input-error-activo {
@@ -98,8 +84,9 @@ main h1{
 	bottom: 15px;
 	z-index: 100;
 	font-size: 16px;
-	
+	color: #9E9E9E;
 }
+
 
 .formulario__checkbox {
 	margin-right: 10px;
@@ -109,7 +96,6 @@ main h1{
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
 	grid-column: span 2;
-	margin-top: 20px;
 }
 .form-ter{
 	display: flex;
@@ -128,8 +114,8 @@ main h1{
 .formulario__mensaje {
 	height: 45px auto;
 	line-height: 45px;
-	background: #F66060;
 	color: #fff;
+	background: #F66060;
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
@@ -192,7 +178,7 @@ main h1{
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid#F66060;
+	border: 3px solid #F66060;
 }
 
 
@@ -212,11 +198,11 @@ main h1{
 		width: 100%;
 	}
 }
-.bt-a{
-	color: #fff;
+.a-enlaces{
+	color:#4e73df;
 	text-decoration: none;
 }
-.bt-a:hover{
-	color: #fff;
-	text-decoration: none;
+.a-enlaces:hover{
+color: blue;
+border-bottom: 1px solid blue;
 }
