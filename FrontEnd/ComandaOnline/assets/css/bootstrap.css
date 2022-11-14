@@ -79,6 +79,11 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
+.log-bx{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75 );
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
 
 hr {
   box-sizing: content-box;
@@ -11292,5 +11297,5 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .fondo_login{
-  background-color:  var(--accentColor);
+  background: linear-gradient(90deg, rgba(251,153,129,1) 35%, rgba(255,149,0,1) 100%);
 }
