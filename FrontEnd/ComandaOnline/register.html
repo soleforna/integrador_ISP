@@ -53,14 +53,16 @@
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 					<i  class="fas fa-eye icon-eye" id="ov" onclick="mostrarreg()" type="button"></i>
 				</div>
-				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				<p class="formulario__input-error">Solo 8 caracteres, Mayusculas, Minusculas, Numeros, sin espacios en blanco y Sin repetir
+					el mismo caracter mas de 4 veces.
+				</p>
 			</div>
 
 			<!-- Grupo: Correo Electronico -->
 			<div class="formulario__grupo" id="grupo__correo">
 				<label for="correo" class="formulario__label">Correo Electrónico</label>
 				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="name@correo.com">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
@@ -72,7 +74,7 @@
 				<div class="formulario__grupo-input">
 					<input type="password" class="formulario__input" name="password2" id="password2" placeholder="*********">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<i  class="fas fa-eye icon-eye" id="ov" onclick="mostrarreg2()" type="button"></i>
+					<i  class="fas fa-eye icon-eye" id="ov2" onclick="mostrarreg2()" type="button"></i>
 				</div>
 				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
 			</div>
@@ -91,7 +93,7 @@
 			<div class="formulario__grupo" id="grupo__direccion">
 				<label for="direccion" class="formulario__label">Direccion</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="av Malvinas Argentinas 1200">
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="av malvinas argentinas 1200">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">La direccion debe contener un nombre seguido de un numero o s/n todo debe ir en minuscula y sin puntos</p>

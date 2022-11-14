@@ -3,7 +3,8 @@ const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	password: /^.{4,12}$/ // 4 a 12 digitos.
+	password: /^(?=(?:.*\d){2})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})\S{8}$/, //solo 8 Caracteres, Mayusculas, Minusculas, Numeros sin espacios en blanco sin repetir el mismo caracter mas de 4 veces.
+
 
 }
 
@@ -67,14 +68,16 @@ formulario.addEventListener('submit', (e) => {
 });
 function mostrar(){
 	var tipo = document.getElementById('password');
-	if(tipo.type=='password'){
+	var icon = document.getElementById('ov');
+	if(tipo.type =='password'){
 		document.getElementById('password').setAttribute('type', 'text');
+		icon.classList.toggle('fa-eye-slash');
 		
 	}
 	else{
 		document.getElementById('password').setAttribute('type', 'password');
+		icon.classList.remove('fa-eye-slash');
 	
 	}
 	
   }
-
