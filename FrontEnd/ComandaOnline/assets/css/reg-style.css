@@ -21,6 +21,7 @@ main {
 }
 main h1{
 	text-align: center;
+	color: #9E9E9E;
 }
 
 .formulario {
@@ -200,4 +201,8 @@ main h1{
 .a-enlaces{
 	color:#4e73df;
 	text-decoration: none;
+}
+.a-enlaces:hover{
+color: blue;
+border-bottom: 1px solid blue;
 }

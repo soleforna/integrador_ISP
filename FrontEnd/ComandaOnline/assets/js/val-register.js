@@ -5,7 +5,7 @@ const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{4,12}$/, // 4 a 12 digitos.
+	password: /^(?=(?:.*\d){2})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})\S{8}$/, //solo 8 Caracteres, Mayusculas, Minusculas, Numeros sin espacios en blanco sin repetir el mismo caracter mas de 4 veces.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
 	direccion: /^[a-zA-ZÀ-ÿ\s]+[Z0-9-s/n]{1,40}$/ // // Letras y espacios, pueden llevar acentos.
@@ -116,31 +116,34 @@ formulario.addEventListener('submit', (e) => {
 });
 function mostrarreg(){
 	var tipo = document.getElementById('password');
+	var icon = document.getElementById('ov');
 	
 	if(tipo.type=='password'){
 		document.getElementById('password').setAttribute('type', 'text');
+		icon.classList.toggle('fa-eye-slash');
 		
 	}
 	else{
 		document.getElementById('password').setAttribute('type', 'password');
+		icon.classList.remove('fa-eye-slash');
 	
 	}
 	
   }
   function mostrarreg2(){
 	var tipo = document.getElementById('password2');
-	
+	var icon2 = document.getElementById('ov2');
 	if(tipo.type=='password'){
 		document.getElementById('password2').setAttribute('type', 'text');
-		
+		icon2.classList.toggle('fa-eye-slash');
 	}
 	else{
 		document.getElementById('password2').setAttribute('type', 'password');
+		icon2.classList.toggle('fa-eye-slash');
 	
 	}
 	
   }
-
 
 
 
