@@ -2,6 +2,7 @@
 -- Script de creación de la base de datos
 -- Path: comanda.sql
 
+
 -- Se crea la base de datos
 CREATE DATABASE comanda; 
 -- Se usa la base de datos
