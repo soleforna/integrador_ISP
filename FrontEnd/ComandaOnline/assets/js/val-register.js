@@ -7,7 +7,7 @@ const expresiones = {
 	apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^(?=(?:.*\d){2})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})\S{8}$/, //solo 8 Caracteres, Mayusculas, Minusculas, Numeros sin espacios en blanco sin repetir el mismo caracter mas de 4 veces.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+	telefono: /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/,
 	direccion: /^[a-zA-ZÀ-ÿ\s]+[Z0-9-s/n]{1,40}$/ // // Letras y espacios, pueden llevar acentos.
 }
 
@@ -144,6 +144,5 @@ function mostrarreg(){
 	}
 	
   }
-
 
 

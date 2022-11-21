@@ -187,7 +187,11 @@ main h1{
 	.formulario {
 		grid-template-columns: 1fr;
 	}
-
+	main{
+		box-shadow:none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+	}
 	.formulario__grupo-terminos, 
 	.formulario__mensaje,
 	.formulario__grupo-btn-enviar {
@@ -205,4 +209,11 @@ main h1{
 .a-enlaces:hover{
 color: blue;
 border-bottom: 1px solid blue;
+}
+.formulario__grupo p{
+	color: #9E9E9E;
+	margin-left: 5px;
+}
+.formulario__grupo .formulario__input-error{
+color: #F66060;
 }

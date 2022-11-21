@@ -33,6 +33,7 @@ main h1{
 	background-position: center center;
 	background-size: cover;
 	margin-left: 30px;
+
 	
 	
 }
@@ -201,7 +202,24 @@ main h1{
 	.formulario {
 		grid-template-columns: 1fr;
 	}
-
+	main{
+		box-shadow:none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+	}
+	.imagen{
+		position: relative;
+		width: 100%;
+		height: 300px;
+		background-image: url('../img/logo.webp');
+		background-position: center center;
+		background-size: cover;
+		right: 32px;
+	
+		
+		
+	}
+	
 	.formulario__grupo-terminos, 
 	.formulario__mensaje,
 	.formulario__grupo-btn-enviar {
@@ -220,4 +238,3 @@ main h1{
 	color: #fff;
 	text-decoration: none;
 }
-

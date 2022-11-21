@@ -26,20 +26,20 @@
     <div class="tab-pane fade" id="pills-desayuno" role="tabpanel" aria-labelledby="pills-desayuno-tab"><h1>Desayuno y Merienda</h1></div>
     <div class="tab-pane fade" id="pills-almuerzo" role="tabpanel" aria-labelledby="pills-almuerzo-tab"><h1>Almuerzo y Cena</h1></div>
     <div class="tab-pane fade show active" id="pills-promo" role="tabpanel" aria-labelledby="pills-promo-tab"><h1>Promociones</h1>
-    <p>1 caffe + 2 medialunas $0.00 <select class=" col-md-2" aria-label="Default select example">
-      <option selected>Seleccionar</option>
+    <p>1 caffe + 2 medialunas $0.00 <select class=" col-md-4" aria-label="Default select example">
+      <option selected disabled>Seleccionar</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
     </select> <button class="btn-agregar" id="agregar">Agregar</button> </p>
-    <p>2 tostados + 1 liquado $ 0.00 <select class=" col-md-2" aria-label="Default select example" id="cant">
-      <option selected>Seleccionar</option>
+    <p>2 tostados + 1 liquado $ 0.00 <select class=" col-md-4" aria-label="Default select example" id="cant">
+      <option selected disabled>Seleccionar</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
     </select> <button class="btn-agregar" id="agregar">Agregar</button></p>
-    <p>1 raviol + 1 coca de 1,5 $0.00 <select class=" col-md-2" aria-label="Default select example">
-      <option selected>Seleccionar</option>
+    <p>1 raviol + 1 coca de 1,5 $0.00 <select class=" col-md-4" aria-label="Default select example">
+      <option selected disabled>Seleccionar</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -89,13 +89,68 @@
                 <th>Precio</th>
                 <th>Cantidad</th>
                 <th>Importe</th>
+                <th>Accion</th>
                 
             </tr>
         </thead>
         <tbody id="tbody-tabla">
         <!-- faltaria un evento con jquery para que pase los datos obtenidos de la base de datos al modal-->
+        <tr>
+          <th scope="row">04156874</th>
+          <td>Cocacola 1,5</td>
+          <td>250</td>
+          <td><select class=" col-md-7" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+          <td>500</td>
+          <td><button class="bt-quitar">X</button></td>
+        </tr>
+        <tr>
+          <th scope="row">04156874</th>
+          <td>Cocacola 1,5</td>
+          <td>250</td>
+          <td><select class="col-md-7" aria-label="Default select example">
+           
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+          <td>500</td>
+          <td><button class="bt-quitar">X</button></td>
+        </tr>
+        <tr>
+          <th scope="row">04156874</th>
+          <td>Cocacola 1,5</td>
+          <td>250</td>
+          <td><select class=" col-md-7" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+          <td>500</td>
+          <td><button class="bt-quitar">X</button></td>
+        </tr>
+        <tr>
+          <th scope="row">04156874</th>
+          <td>Cocacola 1,5</td>
+          <td>250</td>
+          <td><select class=" col-md-7" aria-label="Default select example">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+          <td>500</td>
+          <td><button class="bt-quitar">X</button></td>
+        </tr>
         </tbody>
+       
     </table>
+    <div class="container-button">
+      <button class="bt-pedir"> Realizar Pedido</button>
+    </div>
+ 
      
 
  
