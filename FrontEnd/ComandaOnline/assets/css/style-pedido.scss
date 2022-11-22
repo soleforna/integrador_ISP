@@ -31,7 +31,7 @@
       margin: 0 0 0 10px;
       padding: 10px;
       text-decoration: none;
-      border: 2px solid #FFF9C4;
+      background:  #FFF9C4;
       width: 85px;
       border-radius: 30px;
       text-align: center;
@@ -41,7 +41,7 @@
       width: 130px;
     }
     a:hover {
-      background:#FFF9C4;
+      background:#fff;
       color: #000;
     }
   }
@@ -74,15 +74,16 @@
 
   }
   .btn-agregar{
-    background: none;
-    border: none;
-    border: 2px solid orange;
-    padding: 5px;
+   border: none;
+    background:  orange;
+    padding: 10px 50px 10px 50px;
     margin-left: 10px;
-    color: #000;
+    color: #fff;
+    border-radius: 30px;
+
   }
   .btn-agregar:hover{
-    background: orange;
+    background: rgb(243, 172, 41);
   }
 }
 }
@@ -111,9 +112,55 @@
     background: none !important;
     outline: none; 
     border: none;
-    border: 2px solid #FFF9C4; 
+    background: #FFF9C4 !important; 
+    
   }
   
   
  }
+}
+.modal-content{
+background: #FFF9C4 !important;
+
+.bt-quitar{
+  background: rgb(241, 44, 44);
+  color: #fff;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  font-size: 15px;
+ 
+}
+.bt-quitar:hover{
+  background: rgb(252, 78, 78);
+    
+}
+
+.container-button{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+ 
+.bt-pedir{
+	background: orange;
+  border: none;
+  color:  #fff;
+  padding: 8px 60px 8px 60px;
+  outline: none;
+  border-radius: 30px;
+  
+ 
+}
+.bt-pedir:hover{
+ 
+  background: rgb(243, 172, 41);
+   
+}
+
+
+
+}
 }
