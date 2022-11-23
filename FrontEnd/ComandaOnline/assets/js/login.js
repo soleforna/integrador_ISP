@@ -23,14 +23,17 @@ myForm.addEventListener('submit', function (e) {
 
             console.log(data)
             
-            if (!data.key == null) {
-                $("#formulario>").empty() //empty
-                console.log(data.key)
+            if (!data.key == '') {
+                //$("#formulario>").empty() //empty
                 let token = data.key
-                localStorage.setItem('token', token)
-                //window.location.href = "./dashboard.html"
+                console.log(token.data)
+                //localStorage.setItem('token', token)
+                sessionStorage.setItem('token', token)
+                window.location.href = "./dashboard.html"
             } else if(!data.password == ''){
                 error('Contraseña: ' + data.password);
+            } else if(!data.non_field_errors == ''){
+                error('Error: ' + data.non_field_errors);
             }
         })
         .catch(err => console.log(err));
