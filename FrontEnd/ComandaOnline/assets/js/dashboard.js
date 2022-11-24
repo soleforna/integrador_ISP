@@ -57,15 +57,15 @@ const myLogOut = document.getElementById('logOut');
     e.preventDefault();
   });
 
-})(jQuery); // End of use strict
+  // LogOut
+  myLogOut.addEventListener('click', (e) => {
+    e.preventDefault();
+    // Remover usuario del sessionstorage
+    sessionStorage.removeItem('user');
+    // Remover token del sessionstorage
+    sessionStorage.removeItem('token');
+    // Redireccionar al login
+    window.location.href = "./login.html"
+  });
 
-// LogOut
-myLogOut.addEventListener('click', (e) => {
-  e.preventDefault();
-  // Remover usuario del sessionstorage
-  sessionStorage.removeItem('user');
-  // Remover token del sessionstorage
-  sessionStorage.removeItem('token');
-  // Redireccionar al login
-  window.location.href = "./login.html"
-});
+})(jQuery); // End of use strict
