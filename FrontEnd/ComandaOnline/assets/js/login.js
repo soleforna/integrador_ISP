@@ -1,6 +1,5 @@
 const myForm = document.getElementById('formulario');
 const urlPost = 'http://localhost:8000/api/auth/login/';
-const name = '';
 
 myForm.addEventListener('submit', function (e) {
 
