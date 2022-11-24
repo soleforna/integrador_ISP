@@ -57,8 +57,18 @@ myForm.addEventListener('submit', function (e) {
 function error(text) {
     document.getElementById("error").style.backgroundColor = "indianred";
     document.getElementById("error").style.color = "white";
-    document.getElementById("error").style.borderRadius = "10px";
+    document.getElementById("error").style.borderRadius = "30px";
     document.getElementById("error").style.marginTop = "10px";
     document.getElementById("error").style.textAlign = "center";
+    document.getElementById("error").style.padding = "10px";
     document.getElementById("error").innerText = text;
+}
+
+function mostrar() {
+    var pass = document.getElementById("inputPassword");
+    if (pass.type == "password") {
+        pass.type = "text";
+    } else {
+        pass.type = "password";
+    }
 }
