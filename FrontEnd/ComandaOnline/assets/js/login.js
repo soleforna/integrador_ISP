@@ -37,7 +37,17 @@ myForm.addEventListener('submit', function (e) {
                 //Guardar token en el sessionstorage
                 sessionStorage.setItem('token', data.key)
                 //Redireccionar al dashboard
-                window.location.href = "./dashboard.html"
+                Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    title: 'Login Correcto!',
+                    showConfirmButton: false,
+                    timer: 1500
+                   
+                  }) .then(function() {
+                    window.location = "./dashboard.html";
+                 
+                });
 
             } else if (!data.password == '') {
                 //Remover usuario del sessionstorage
@@ -63,3 +73,19 @@ function error(text) {
     document.getElementById("error").style.textAlign = "center";
     document.getElementById("error").innerText = text;
 }
+
+function mostrar(){
+	var tipo = document.getElementById('inputPassword');
+	var icon = document.getElementById('ov');
+	if(tipo.type =='password'){
+		document.getElementById('inputPassword').setAttribute('type', 'text');
+		icon.classList.toggle('fa-eye-slash');
+		
+	}
+	else{
+		document.getElementById('inputPassword').setAttribute('type', 'password');
+		icon.classList.remove('fa-eye-slash');
+	
+	}
+	
+  }

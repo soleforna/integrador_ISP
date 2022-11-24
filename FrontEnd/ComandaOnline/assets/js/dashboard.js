@@ -57,3 +57,50 @@
 
 })(jQuery); // End of use strict
 
+function cerrarsession(){
+  
+    
+  const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+      },
+      buttonsStyling: false
+    })
+    
+    swalWithBootstrapButtons.fire({
+      title: 'Desea cerrar session?',
+      text: "Esta por cerrar session !",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, Logout !',
+      cancelButtonText: 'No, cancel !',
+      reverseButtons: true
+    }).then((result) => {
+      if (result.isConfirmed) {
+        swalWithBootstrapButtons.fire(
+          'logout!',
+          'Has cerrado session.',
+          'success'
+          
+        ).then(function() {
+          sessionStorage.removeItem('user');
+          // Remover token del sessionstorage
+          sessionStorage.removeItem('token');
+          // Redireccionar al login
+          window.location.href = "./login.html"
+      });
+      
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire(
+          'Cancelled',
+          'Ha cancelado el logout :)',
+          'error'
+        )
+      }
+    })
+ 
+}

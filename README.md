@@ -9,7 +9,9 @@ Pasos para crear entorno virtual en local y lanzar el servidor django:
      pip install mysqlclient
      pip install py mysql
      pip install djangorestframework
-
+     pip install django-allauth
+     pip install django-cors-headers
+     pip install dj_rest_auh
 4) Crear BD en algún manejador de BD (ej: PHPmyAdmin)
 5) Realizar las migraciones: py manage.py makemigrations 
 6) Crear un superusuario: py manage.py createsuperuser
