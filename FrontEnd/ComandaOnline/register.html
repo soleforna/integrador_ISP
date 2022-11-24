@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/reg-style.css">
-	
+
 </head>
+
 <body>
 	<main>
 		<h1>Register</h1>
 		<form action="" class="formulario" id="formulario">
-		
+
 
 			<!-- Grupo: Nombre -->
 			<div class="formulario__grupo" id="grupo__nombre">
 				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe" minlength="3" maxlength="20">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe"
+						minlength="3" maxlength="20">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<i  class="fas fa-signature icon-eye"></i>
+					<i class="fas fa-signature icon-eye"></i>
 				</div>
-				<p class="formulario__input-error">Ingrese un nombre valido, el minimo es de 3 caracteres y el maximo de 20 caracteres.</p>
+				<p class="formulario__input-error">Ingrese un nombre valido, el minimo es de 3 caracteres y el maximo de
+					20 caracteres.</p>
 			</div>
 
 			<!-- Grupo: Apellido -->
 			<div class="formulario__grupo" id="grupo__apellido">
 				<label for="apellido" class="formulario__label">Apellido</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="John Doe" minlength="3" maxlength="20">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="John Doe"
+						minlength="3" maxlength="20">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<i  class="fas fa-signature icon-eye"></i>
-					
+					<i class="fas fa-signature icon-eye"></i>
+
 				</div>
-				<p class="formulario__input-error">Ingrese un apellido valido, el minimo es de 3 caracteres y el maximo de 20 caracteres</p>
+				<p class="formulario__input-error">Ingrese un apellido valido, el minimo es de 3 caracteres y el maximo
+					de 20 caracteres</p>
 			</div>
 
-	<!-- Grupo: Usuario -->
-	<div class="formulario__grupo" id="grupo__usuario">
-		<label for="usuario" class="formulario__label">Usuario</label>
-		<div class="formulario__grupo-input">
-			<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
-			<i class="formulario__validacion-estado fas fa-times-circle"></i>
-			<i  class="fas fa-user icon-eye"></i>
-		</div>
-		<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras, guion bajo y sin espacios en blanco.</p>
-	</div>
-	
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					<i class="fas fa-user icon-eye"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
+					numeros, letras, guion bajo y sin espacios en blanco.</p>
+			</div>
+
 			<!-- Grupo: Contraseña -->
 			<div class="formulario__grupo" id="grupo__password">
 				<label for="password" class="formulario__label">Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password" placeholder="*********">
+					<input type="password" class="formulario__input" name="password" id="password"
+						placeholder="*********">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<i  class="fas fa-eye icon-eye" id="ov" onclick="mostrarreg()" type="button"></i>
+					<i class="fas fa-eye icon-eye" id="ov" onclick="mostrarreg()" type="button"></i>
 				</div>
-				<p class="formulario__input-error">Solo 8 caracteres, Mayusculas, Minusculas, Numeros, sin espacios en blanco y Sin repetir
+				<p class="formulario__input-error">Solo 8 caracteres, Mayusculas, Minusculas, Numeros, sin espacios en
+					blanco y Sin repetir
 					el mismo caracter mas de 4 veces.
 				</p>
 			</div>
-	<!-- Grupo: Contraseña 2 -->
-	<div class="formulario__grupo  " id="grupo__password2">
-		<label for="password2" class="formulario__label">Repetir Contraseña</label>
-		<div class="formulario__grupo-input">
-			<input type="password" class="formulario__input" name="password2" id="password2" placeholder="*********">
-			<i class="formulario__validacion-estado fas fa-times-circle"></i>
-			<i  class="fas fa-eye icon-eye" id="ov2" onclick="mostrarreg2()" type="button"></i>
-		</div>
-		<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-	</div>
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo  " id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2"
+						placeholder="*********">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					<i class="fas fa-eye icon-eye" id="ov2" onclick="mostrarreg2()" type="button"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
 
 			<!-- Grupo: Correo Electronico -->
 			<div class="formulario__grupo" id="grupo__correo">
 				<label for="correo" class="formulario__label">Correo Electrónico</label>
 				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="name@correo.com">
+					<input type="email" class="formulario__input" name="correo" id="correo"
+						placeholder="name@correo.com">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<i  class="fas fa-envelope icon-eye"></i>
+					<i class="fas fa-envelope icon-eye"></i>
 				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+					guion bajo.</p>
 			</div>
 
-		
+
 			<!-- Grupo: Teléfono -->
 			<div class="formulario__grupo" id="grupo__telefono">
 				<label for="telefono" class="formulario__label">Teléfono</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="543541578594">
+					<input type="text" class="formulario__input" name="telefono" id="telefono"
+						placeholder="543541578594">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 					<i class="fas fa-mobile icon-eye"></i>
 				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros, ingrese el 54 y el numero.</p>
-			
+				<p class="formulario__input-error">El telefono solo puede contener numeros, ingrese el 54 y el numero.
+				</p>
+
 			</div>
 
 			<!-- Grupo: direccion -->
 			<div class="formulario__grupo" id="grupo__direccion">
 				<label for="direccion" class="formulario__label">Direccion</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="av malvinas argentinas 1200">
+					<input type="text" class="formulario__input" name="direccion" id="direccion"
+						placeholder="av malvinas argentinas 1200">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 					<i class="fas fa-map-marked-alt icon-eye"></i>
 				</div>
-				<p class="formulario__input-error">La direccion debe contener un nombre seguido de un numero o s/n todo debe ir en minuscula y sin puntos</p>
+				<p class="formulario__input-error">La direccion debe contener un nombre seguido de un numero o s/n todo
+					debe ir en minuscula y sin puntos</p>
 			</div>
 
 			<!-- Grupo: Terminos y Condiciones -->
@@ -112,19 +128,20 @@
 				<label class="formulario__label">
 					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
 				</label>
-			      <a href="./terminos.html" target="_blank" class="a-enlaces">Acepto los Terminos y Condiciones</a>
+				<a href="./terminos.html" target="_blank" class="a-enlaces">Acepto los Terminos y Condiciones</a>
 			</div>
 			<div class="formulario__grupo form-log" id="grupo__terminos">
-				
-				
-			      <a href="./login.html" class="a-enlaces"> Ya estas registrado?</a>
-				  <br>
-				  <p>/</p>
-				  <a href="./index.html" class="a-enlaces a-e2">Ir a pagina principal</a>
+
+
+				<a href="./login.html" class="a-enlaces"> Ya estas registrado?</a>
+				<br>
+				<p>/</p>
+				<a href="./index.html" class="a-enlaces a-e2">Ir a pagina principal</a>
 			</div>
-		
+
 			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+					correctamente. </p>
 			</div>
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
@@ -133,8 +150,10 @@
 			</div>
 		</form>
 	</main>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./assets/js/register.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="./assets/js/val-register.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
