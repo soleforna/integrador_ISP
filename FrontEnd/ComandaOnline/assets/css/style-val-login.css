@@ -57,7 +57,7 @@ main h2{
 	background: none;
 	border: 1px solid  darkgrey ;
 	border-radius: 30px;
-	height: 15%;
+	height: 45px;
 	line-height: 45px;
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
@@ -200,18 +200,6 @@ main h2{
 		box-shadow:none;
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
-	}
-	.imagen{
-		position: relative;
-		width: 100%;
-		height: 300px;
-		background-image: url('../img/logo.webp');
-		background-position: center center;
-		background-size: cover;
-		right: 32px;
-	
-		
-		
 	}
 	
 	.formulario__grupo-terminos, 
