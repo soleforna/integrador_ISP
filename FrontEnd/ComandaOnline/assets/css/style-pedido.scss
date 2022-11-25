@@ -57,16 +57,18 @@
   }
   p{
     color:#000;
+  }
 
   select{
+    width: 40%;
     background: none;
     border: 2px solid orange;
     color: #000;
     padding: 7px;
-   margin-left: 5px;
-   outline: none;
-  option{
-    color:#000;
+    margin-left: 5px;
+    outline: none;
+    option{
+       color:#000;
    
    
   }
@@ -85,7 +87,7 @@
   .btn-agregar:hover{
     background: rgb(243, 172, 41);
   }
-}
+
 }
 
 
@@ -121,6 +123,8 @@
 }
 .modal-content{
 background: #FFF9C4 !important;
+overflow-x: auto;
+overflow-Y: auto;
 
 .bt-quitar{
   background: rgb(241, 44, 44);

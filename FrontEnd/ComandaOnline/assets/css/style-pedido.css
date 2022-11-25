@@ -55,7 +55,8 @@
 .tab-pane p {
   color: #000;
 }
-.tab-pane p select {
+.tab-pane select {
+  width: 40%;
   background: none;
   border: 2px solid orange;
   color: #000;
@@ -63,10 +64,10 @@
   margin-left: 5px;
   outline: none;
 }
-.tab-pane p select option {
+.tab-pane select option {
   color: #000;
 }
-.tab-pane p .btn-agregar {
+.tab-pane .btn-agregar {
   border: none;
   background: orange;
   padding: 10px 50px 10px 50px;
@@ -74,7 +75,7 @@
   color: #fff;
   border-radius: 30px;
 }
-.tab-pane p .btn-agregar:hover {
+.tab-pane .btn-agregar:hover {
   background: rgb(243, 172, 41);
 }
 
@@ -100,6 +101,8 @@
 
 .modal-content {
   background: #FFF9C4 !important;
+  overflow-x: auto;
+  overflow-Y: auto;
 }
 .modal-content .bt-quitar {
   background: rgb(241, 44, 44);
