@@ -57,15 +57,51 @@ const myLogOut = document.getElementById('logOut');
     e.preventDefault();
   });
 
-  // LogOut
-  myLogOut.addEventListener('click', (e) => {
-    e.preventDefault();
-    // Remover usuario del sessionstorage
-    sessionStorage.removeItem('user');
-    // Remover token del sessionstorage
-    sessionStorage.removeItem('token');
-    // Redireccionar al login
-    window.location.href = "./login.html"
-  });
-
 })(jQuery); // End of use strict
+
+// LogOut
+function cerrarsession() {
+
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-danger mx-2',
+      cancelButton: 'btn btn-success mx-2'
+    },
+    buttonsStyling: false
+  })
+
+  swalWithBootstrapButtons.fire({
+    title: 'Desea salir de Comanda?',
+    text: "Esta por cerrar sesión!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Salir',
+    cancelButtonText: 'Cancelar',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire(
+        'Cerrando sesión!',
+        'Gracias por usar Comanda.',
+        'success'
+
+      ).then(function () {
+        sessionStorage.removeItem('user');
+        // Remover token del sessionstorage
+        sessionStorage.removeItem('token');
+        // Redireccionar al login
+        window.location.href = "./login.html"
+      });
+
+    } else if (
+      /* Read more about handling dismissals below */
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      swalWithBootstrapButtons.fire(
+        'Gracias por seguir usando Comanda',
+        'Continua con tu trabajo',
+        'success'
+      )
+    }
+  })
+}
