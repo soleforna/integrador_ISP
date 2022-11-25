@@ -1,6 +1,5 @@
 const myForm = document.getElementById('formulario');
 const urlPost = 'http://localhost:8000/api/auth/login/';
-const name = '';
 
 myForm.addEventListener('submit', function (e) {
 
@@ -43,12 +42,9 @@ myForm.addEventListener('submit', function (e) {
                     title: 'Login Correcto!',
                     showConfirmButton: false,
                     timer: 1500
-                   
-                  }) .then(function() {
+                }).then(function () {
                     window.location = "./dashboard.html";
-                 
                 });
-
             } else if (!data.password == '') {
                 //Remover usuario del sessionstorage
                 sessionStorage.removeItem('user');
@@ -68,24 +64,21 @@ myForm.addEventListener('submit', function (e) {
 function error(text) {
     document.getElementById("error").style.backgroundColor = "indianred";
     document.getElementById("error").style.color = "white";
-    document.getElementById("error").style.borderRadius = "10px";
+    document.getElementById("error").style.borderRadius = "30px";
     document.getElementById("error").style.marginTop = "10px";
     document.getElementById("error").style.textAlign = "center";
+    document.getElementById("error").style.padding = "10px";
     document.getElementById("error").innerText = text;
 }
 
-function mostrar(){
-	var tipo = document.getElementById('inputPassword');
-	var icon = document.getElementById('ov');
-	if(tipo.type =='password'){
-		document.getElementById('inputPassword').setAttribute('type', 'text');
-		icon.classList.toggle('fa-eye-slash');
-		
-	}
-	else{
-		document.getElementById('inputPassword').setAttribute('type', 'password');
-		icon.classList.remove('fa-eye-slash');
-	
-	}
-	
-  }
+function mostrar() {
+    var pass = document.getElementById("inputPassword");
+    var icon = document.getElementById('ov');
+    if (pass.type == "password") {
+        pass.type = "text";
+        icon.classList.toggle('fa-eye-slash');
+    } else {
+        pass.type = "password";
+        icon.classList.remove('fa-eye-slash');
+    }
+}

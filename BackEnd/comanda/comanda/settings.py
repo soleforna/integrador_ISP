@@ -131,13 +131,12 @@ WSGI_APPLICATION = 'comanda.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comandaa',
+        'NAME': 'comanda',
         'USER': 'root',
-        'PASSWORD':'',
+        'PASSWORD':'root',
         'HOST': 'localhost',
         'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'" }
+        'OPTIONS': {'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'" }
     }
 }
 
