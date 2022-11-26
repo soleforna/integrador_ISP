@@ -27,6 +27,17 @@ Comanda OnLine es un aplicativo web que permite gestionar el funcionamiento de u
 
 --------
 
+## Documentación
+
+
+* <a href="https://github.com/soleforna/integrador_ISP/blob/main/Document/01%20-%20Propuestas%20para%20el%20proyecto%20integrador.pdf" target="_blank">Propuesta de Proyecto</a>
+* <a href="https://github.com/soleforna/integrador_ISP/blob/main/Document/02%20-%20Especificaciones%20Comanda%20-%20IEEE%20830.pdf" target="_blank">IEEE 830</a>
+* <a href="https://github.com/soleforna/integrador_ISP/blob/main/Document/03%20-%20Sitemap.pdf" target="_blank">Mapa de Sitio</a>
+* <a href="https://github.com/soleforna/integrador_ISP/blob/main/Document/04%20-%20Casos%20de%20uso.pdf" target="_blank">Casos de Uso</a>
+
+
+--------
+
 El proyecto esta desarrollo con las siguientes tecnologias:
 
 FrontEnd:
@@ -39,22 +50,11 @@ BackEnd:
 * Django (Django Rest Framework)
 * MySQL
 
-Pasos para crear entorno virtual en local y lanzar el servidor django:
+--------
 
-1) Crear entorno virtual:  py -m venv env
-2) Activar entorno virtual: ./env/scripts/activate
-3) Instalar los siguientes paquetes:
-   *  pip install django 
-   *  pip install mysqlclient
-   *  pip install py mysql
-   *  pip install djangorestframework
-   *  pip install django-allauth
-   *  pip install django-cors-headers
-   *  pip install dj_rest_auh
-   *  pip install django-cors-headers
-4) Crear BD en algún manejador de BD (ej: PHPmyAdmin)
-5) Realizar las migraciones: py manage.py makemigrations 
-6) Crear un superusuario: py manage.py createsuperuser
-7) Levantar el servidor: py manage.py runserver
-   *  Ingresar con el superusuario: (Nombre de usuario - Contraseña - E mail)
-Listo!!
+###  Link de la página Comanda Online:
+https://soleforna.github.io/integrador_ISP/FrontEnd/ComandaOnline/index.html
+
+### Link de la pagina del grupo desarrollador:
+http://www.rktcomanda.online
+
