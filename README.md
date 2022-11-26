@@ -1,5 +1,5 @@
-# 🚀 Rocket Team - Comanda Online
-## Proyecto Integrador ISPC Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales.
+# 🚀 Rocket Team - Comanda Online 
+### Proyecto Integrador ISPC Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales.
 
 <div style="display: inline_block">
   <a href="https://es.wikipedia.org/wiki/Python" target="_blank"><img align="center" alt="Made With PYTHON"  src="https://img.shields.io/badge/Made%20With-PHYTON-brightgreen"></a>
