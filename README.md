@@ -25,7 +25,7 @@ Comanda OnLine es un aplicativo web que permite gestionar el funcionamiento de u
 *  Matias De La Fuente
 *  Adrian Camus
 
--------
+--------
 
 El proyecto esta desarrollo con las siguientes tecnologias:
 
